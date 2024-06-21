@@ -2,7 +2,9 @@
 //const listePhrases = ["Pas de panique !", "La vie, l'univers et le reste", "Merci pour le poisson"]
 
 function afficherResultat(score, nbMotsProposes) {
-    console.log("Votre score est de " + score + " sur " + nbMotsProposes)
+    if (confirm("Votre score est de " + score + " sur " + nbMotsProposes)) {
+        location.reload();
+    }
 }
 
 function choisirPhraseOuMots() {
