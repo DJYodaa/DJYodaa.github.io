@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morpion</title>
+    <script src="Jeu.js"></script>
+
+    <style>
+
+        body {
+        	margin:0;
+        	padding:0;
+        
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .tableau {
+            display: flex;
+            position: relative;
+        }
+
+
+
+
+        .topleft {
+            display: flex;
+            position: absolute;
+            top: 40px;
+            left: 540px;
+        }
+
+        .top {
+            display: flex;
+            position: absolute;
+            top: 40px;
+            left: 845px;
+        }
+
+        .topright {
+            display: flex;
+            position: absolute;
+            top: 40px;
+            left: 1150px;
+        }
+
+        .midleleft {
+            display: flex;
+            position: absolute;
+            top: 357px;
+            left: 540px;
+        }
+
+        .midle {
+            display: flex;
+            position: absolute;
+            top: 357px;
+            left: 845px;
+        }
+
+        .midleright {
+            display: flex;
+            position: absolute;
+            top: 357px;
+            left: 1150px;
+        }
+
+        .downleft {
+            display: flex;
+            position: absolute;
+            top: 670px;
+            left: 540px;
+        }
+
+        .down {
+            display: flex;
+            position: absolute;
+            top: 670px;
+            left: 845px;
+        }
+
+        .downright {
+            display: flex;
+            position: absolute;
+            top: 670px;
+            left: 1150px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="tableau">
+            <img src="Image/tableau_morpion.avif">
+        </div>
+
+        <div class="topleft"><img src="Image/fond_piéce_B.png" id="11" onClick="TopLeftfunction(this.id)"></div>
+        <div class="top"><img src="Image/fond_piéce_B.png" id="12" onClick="midleTopfunction(this.id)"></div>
+        <div class="topright"><img src="Image/fond_piéce_B.png" id="13" onClick="TopRightFunction(this.id)"></div>
+        <div class="midleleft"><img src="Image/fond_piéce_B.png" id="21" onClick="leftMidlefunction(this.id)"></div>
+        <div class="midle"><img src="Image/fond_piéce_B.png" id="22" onClick="midlefunction(this.id)"></div>
+        <div class="midleright"><img src="Image/fond_piéce_B.png" id="23" onClick="midleRight(this.id)"></div>
+        <div class="downleft"><img src="Image/fond_piéce_B.png" id="31" onClick="bottomLeft(this.id)"></div>
+        <div class="down"><img src="Image/fond_piéce_B.png" id="32" onClick="bottom(this.id)"></div>
+        <div class="downright"><img src="Image/fond_piéce_B.png" id="33" onClick="bottomRight(this.id)"></div>
+    </div>
+    
+</body>
+</html>
