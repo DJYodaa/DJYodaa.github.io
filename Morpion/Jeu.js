@@ -59,7 +59,7 @@ function verification() {
 }
 
 function win(liste) {
-    if (confirm(" Bien jouer. Le joueur " + liste[0] + " a gagé !!!\n En appuyant sur 'OK' tu relancera une partie")) {
+    if (confirm(" Bien jouer. Le joueur " + liste[0] + " a gagné !!!\n En appuyant sur 'OK' tu relancera une partie")) {
         location.reload();
     }
 }
